@@ -1,0 +1,49 @@
+.invite {
+    width: calc(400px - 30px);
+    background: linear-gradient(90deg, #efefef, #b9deed);
+
+    border-radius: 6px;
+    padding: 25px 15px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.invite .invite-title {
+    text-align: center;
+    font-size: 16px;
+
+    opacity: .8;
+}
+
+.invite .avatar {
+    margin-top: 15px;
+}
+.invite .invite-name {
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-size: 18px;
+}
+.invite .invite-name span {
+    width: 100%;
+    text-align: center;
+
+    font-size: 12px;
+    opacity: .7;
+}
+
+.invite .invite-btns {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+.invite .invite-btns .btn + .btn {
+    margin-left: 15px;
+}

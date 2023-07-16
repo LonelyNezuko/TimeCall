@@ -1,0 +1,46 @@
+.contextMenu {
+    position: relative;
+}
+.contextMenu-wrap {
+    position: absolute;
+
+    left: calc(100% + 5px);
+    top: 0;
+
+    background: linear-gradient(90deg, #efefef, #b9deed);
+    width: 190px;
+
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contextMenu-wrap button {
+    width: 100%;
+
+    background: transparent;
+    border: 0;
+
+    text-align: left;
+    padding: 7px 8px;
+
+    display: flex;
+    align-items: center;
+
+    color: #4c98b7;
+
+    cursor: pointer;
+    transition: .2s;
+}
+.contextMenu-wrap button,
+.contextMenu-wrap button svg {
+    font-size: 12px;
+}
+.contextMenu-wrap button:hover {
+    color: black;
+}
+.contextMenu-wrap button svg {
+    margin-right: 3px;
+}
+.contextMenu-wrap button.contextMenu-btn-red {
+    color: white;
+    background: #ff7c7cb0;
+}

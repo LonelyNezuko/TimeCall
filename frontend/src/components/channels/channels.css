@@ -1,0 +1,127 @@
+.channels {
+    background: linear-gradient(90deg, #efefef, #b9deed);
+    padding: 15px;
+
+    border-radius: 8px;
+
+    width: calc(255px - 30px);
+    max-height: calc(100% - 30px);
+}
+
+.channels .channels-account {
+    display: flex;
+    align-items: center;
+}
+.channels .channels-account h1 {
+    margin-left: 15px;
+    margin-right: 35px;
+}
+.channels .channels-account h1,
+.channels .channels-account h1 a {
+    font-size: 13px;
+    font-weight: 700;
+}
+.channels .channels-account h1 span {
+    font-size: 11px;
+    opacity: .7;
+}
+
+
+.channels .channels-settings {
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.channels .channels-settings .channels-settings-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.channels .channels-settings .channels-settings-wrap .btn-icon {
+    font-size: 17px;
+}
+.channels .channels-settings .channels-settings-wrap section {
+    display: flex;
+    align-items: center;
+}
+
+
+.channels .channels-dialogs {
+    margin-top: 20px;
+}
+.channels .channels-dialogs .channels-dialog-title {
+    font-size: 12px;
+    color: black;
+    opacity: .6;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.channels .channels-dialogs .channels-dialogs-wrap {
+    margin-top: 5px;
+
+    overflow: auto;
+    max-height: 300px;
+}
+
+.channels .channels-groups .dialogs-elem .dialogs-elem-new {
+    width: auto;
+    height: auto;
+
+    color: white;
+    font-size: 10px;
+
+    padding: 1px 4px;
+    padding-bottom: 1.5px;
+
+    border-radius: 5px;
+}
+
+.channels .channels-dialogs .channels-groups-new {
+    margin-top: 7px;
+
+    background-color: #93c8ddc2;
+    padding: 7px 15px;
+
+    border-radius: 4px;
+
+    transition: .2s;
+    cursor: pointer;
+}
+.channels .channels-dialogs .channels-groups-new:hover {
+    background-color: #93c8dd;
+}
+.channels .channels-dialogs .channels-groups-new a {
+    font-size: 12px;
+
+    text-align: center;
+    color: white;
+
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.channels .channels-dialogs .channels-groups-new a span {
+    font-size: 10px;
+    font-weight: 400;
+}
+.channels .channels-dialogs .channels-groups-new a svg {
+    margin-right: 7px;
+}
+
+.dialogs-elem h2 span.channels-groups-empty {
+    opacity: .5;
+}
+.dialogs-elem h2 span .avatar.channels-groups-more .avatar-wrap {
+    background-color: #93c8dd;
+    color: white;
+
+    font-size: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

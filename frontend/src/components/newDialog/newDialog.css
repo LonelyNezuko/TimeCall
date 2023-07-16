@@ -1,0 +1,149 @@
+.newDialog {
+    width: calc(600px - 30px);
+    background: linear-gradient(90deg, #efefef, #b9deed);
+
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.newDialog .newDialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newDialog .newDialog-header h1 {
+    font-size: 16px;
+}
+.newDialog .newDialog-header .btn-icon svg {
+    font-size: 20px;
+}
+
+.newDialog .newDialog-body {
+    margin-top: 15px;
+}
+
+.newDialog .newDialog-body .newDialog-body-elem {
+
+}
+.newDialog .newDialog-body .newDialog-body-elem + .newDialog-body-elem {
+    margin-top: 15px;
+}
+.newDialog .newDialog-body .newDialog-body-elem .newDialog-body-elem-title {
+    font-size: 12px;
+    opacity: .7;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newDialog .newDialog-body .newDialog-body-elem .newDialog-body-elem-title span {
+    font-size: 11px;
+}
+.newDialog .newDialog-body .newDialog-body-elem .newDialog-body-elem-wrap {
+    margin-top: 7px;
+}
+
+.newDialog .newDialog-body .newDialog-body-elem .input {
+    width: 100%;
+}
+.newDialog .newDialog-body .newDialog-body-elem .input input {
+    padding: 15px;
+    width: calc(100% - 30px);
+
+    background: #ffffffad;
+}
+
+.newDialog .newDialog-body .newDialog-body-users {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.newDialog .newDialog-body .newDialog-body-users .avatar {
+    cursor: pointer;
+
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+.newDialog .newDialog-body .newDialog-body-users .avatar .avatar-wrap {
+    position: relative;
+}
+.newDialog .newDialog-body .newDialog-body-users .avatar:not(newDialog-body-users-add):hover .avatar-wrap div {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+.newDialog .newDialog-body .newDialog-body-users .avatar .avatar-wrap div {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #fd6565;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+
+    transition: .2s;
+}
+.newDialog .newDialog-body .newDialog-body-users .avatar .avatar-wrap div svg {
+    font-size: 25px;
+}
+.newDialog .newDialog-body .newDialog-body-users .newDialog-body-users-add {
+    background-color: #80c5e1;
+    transition: .2s;
+}
+.newDialog .newDialog-body .newDialog-body-users .newDialog-body-users-add:hover {
+    background-color: #60b5d7;
+}
+.newDialog .newDialog-body .newDialog-body-users .newDialog-body-users-add svg {
+    color: white;
+    font-size: 25px;
+}
+
+.newDialog .newDialog-body .newDialog-body-avatar {
+    display: flex;
+    align-items: flex-end;
+}
+.newDialog .newDialog-body .newDialog-body-avatar .newDialog-body-avatar-settings {
+    margin-left: 15px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: 130px;
+}
+.newDialog .newDialog-body .newDialog-body-avatar .newDialog-body-avatar-settings .btn {
+    width: 100%;
+}
+.newDialog .newDialog-body .newDialog-body-avatar .newDialog-body-avatar-settings .btn + .btn {
+    margin-top: 7px;
+}
+.newDialog .newDialog-body .newDialog-body-avatar .newDialog-body-avatar-settings .input {
+    margin-top: 25px;
+}
+.newDialog .newDialog-body .newDialog-body-avatar .newDialog-body-avatar-settings .input input {
+    padding: 7px;
+    width: calc(100% - 14px);
+}
+
+
+.newDialog .newDialog-btns {
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newDialog .newDialog-btns .btn + .btn {
+    margin-left: 7px;
+}

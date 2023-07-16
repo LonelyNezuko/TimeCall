@@ -1,0 +1,87 @@
+.login {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: linear-gradient(90deg, #efefef, #b9deed);
+    padding: 45px 65px;
+
+    border-radius: 6px;
+}
+.login-wrap {
+    width: 250px;
+}
+
+.login h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.login h2 {
+    opacity: .6;
+    font-size: 12px;
+
+    margin-top: 7px;
+}
+
+.login .login-inputs {
+    margin: 0 auto;
+    margin-top: 30px;
+
+    width: 100%;
+}
+.login .login-inputs .input {
+    width: 100%;
+}
+.login .login-inputs .input input {
+    padding: 15px;
+    width: calc(100% - 30px);
+}
+.login .login-inputs .input label {
+    left: 15px;
+}
+.login .login-inputs .input input:not(:placeholder-shown) ~ label,
+.login .login-inputs .input input:focus ~ label {
+    left: 0;
+}
+
+.login .login-btns {
+    margin-top: 45px;
+    width: 100%;
+}
+.login .login-btns .btn {
+    padding: 16px;
+}
+.login .login-btns .btn:first-child {
+    margin-bottom: 20px;
+}
+.login .login-btns .login-btns-forgot {
+    text-align: center;
+    margin: 10px 0;
+
+    font-size: 12px;
+    opacity: .7;
+
+    cursor: pointer;
+}
+.login .login-btns .login-btns-forgot a {
+    font-size: 12px;
+}
+.login .login-btns .btn:last-child {
+    background-color: #ffffff9e;
+    color: #000000b0;
+
+    text-transform: uppercase;
+    font-weight: 600;
+
+    width: calc(100% - 32px);
+}
+
+.login .login-other {
+    margin-top: 20px;
+}
+.login .login-other .input-checkbox + .input-checkbox {
+    margin-top: 10px;
+}

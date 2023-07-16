@@ -1,0 +1,179 @@
+.pageDialogs {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+
+    display: flex;
+    align-items: flex-start;
+
+    background: linear-gradient(90deg, #efefef, #b9deed);
+    border-radius: 6px;
+
+    padding: 15px;
+}
+
+.pageDialogs .pageDialogs-list {
+    width: 300px;
+    max-height: 100%;
+}
+
+.pageDialogs .pageDialogs-list-title {
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pageDialogs .pageDialogs-list-title a {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.pageDialogs .pageDialogs-list .pageDialogs-list-wrap {
+    margin-top: 5px;
+    height: calc(100% - 92px);
+
+    overflow: auto;
+}
+
+
+.pageDialogs .pageDialogs-body {
+    margin-left: 30px;
+
+    border-left: 2px solid #b9deed;
+    padding-left: 15px;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+.pageDialogs .pageDialogs-body-wrap {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(90deg, #b9deed, #efefef);
+
+    width: calc(100% - 20px);
+    padding: 7px 10px;
+
+    border-radius: 6px;
+}
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-title {
+    display: flex;
+    align-items: center;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-title svg {
+    font-size: 35px;
+    color: #6bb9d9;
+
+    margin-right: 17px;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-title h1 {
+    margin-left: 8px;
+    font-weight: 600;
+    line-height: 15px;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-title h1 span {
+    font-size: 12px;
+    color: #3fa8d3;
+}
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right {
+    display: flex;
+    align-items: center;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .btn-icon {
+
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .btn-icon svg {
+    font-size: 20px;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .btn-icon:not(.pageDialogs-body-header-search):not(:hover) svg {
+    color: #6bb9d9;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .btn-icon + .btn-icon {
+    margin-left: 6px;
+}
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .pageDialogs-body-header-search {
+    position: relative;
+    background: #85cce9;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .btn-icon input {
+    display: none;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .pageDialogs-body-header-search input {
+    background: transparent;
+    border: 0;
+
+    font-size: 12px;
+    color: white;
+
+    padding: 2px 0;
+    display: block;
+
+    margin-right: 7px;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .pageDialogs-body-header-search input::placeholder {
+    font-size: 12px;
+    color: white;
+
+    opacity: .8;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-header .pageDialogs-body-header-right .pageDialogs-body-header-search svg {
+    color: white;
+}
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-messages {
+    margin: 15px 0;
+    height: calc(100% - 140px);
+}
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-input {
+    width: calc(100% - 15px);
+
+    position: absolute;
+    bottom: 0;
+
+    z-index: 2;
+}
+
+
+.pageDialogs .pageDialogs-body .pageDialogs-body-new {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-new svg {
+    font-size: 65px;
+    color: #2d8bb15c;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-new h1 {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 25px;
+    font-size: 12px;
+    opacity: .7;
+}
+.pageDialogs .pageDialogs-body .pageDialogs-body-new .btn {
+    margin-top: 7px;
+    font-size: 12px;
+}

@@ -1,0 +1,105 @@
+.messages {
+    overflow: auto;
+    height: 100%;
+    padding: 0 5px;
+}
+.messages .messages-elem {
+    display: flex;
+}
+.messages .messages-elem + .messages-elem {
+    margin-top: 15px;
+}
+.messages .messages-elem-right {
+    flex-direction: row-reverse;
+}
+.messages .messages-elem .messages-elem-avatar {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    margin-right: 15px;
+}
+.messages .messages-elem-right .messages-elem-avatar {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.messages .messages-elem .messages-elem-text {
+    background: linear-gradient(90deg, #b9deed, #efefef);
+    padding: 12px 18px;
+
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+
+    max-width: calc(470px - 36px);
+
+    position: relative;
+}
+.messages .messages-elem-right .messages-elem-text {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 25px;
+}
+/* .messages .messages-elem .messages-elem-text:before {
+    content: "";
+    display: block;
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 0;
+
+    transform: translateX(-50%);
+
+    border-bottom: 25px solid #b9deed;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+} */
+.messages .messages-elem .messages-elem-text .messages-elem-text-wrap {
+    font-weight: 500;
+    font-size: 13px;
+}
+.messages .messages-elem .messages-elem-text .messages-elem-text-href {
+    color: #5082cd;
+}
+.messages .messages-elem .messages-elem-text .messages-elem-text-date {
+    margin-top: 15px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+.messages .messages-elem-right .messages-elem-text .messages-elem-text-date {
+    flex-direction: row-reverse;
+}
+.messages .messages-elem .messages-elem-text .messages-elem-text-date h1 {
+    font-size: 11px;
+    opacity: .5;
+}
+.messages .messages-elem .messages-elem-text .messages-elem-text-date svg {
+    font-size: 12px;
+    opacity: .5;
+
+    margin-left: 20px;
+}
+.messages .messages-elem-right .messages-elem-text .messages-elem-text-date svg {
+    left: 0;
+}
+.messages .messages-elem:not(.messages-elem-right) .messages-elem-text .messages-elem-text-date svg {
+    right: 0;
+}
+
+.messages .messages-elem .messages-elem-text .messages-elem-text-date .messages-elem-text-name {
+    font-size: 12px;
+    opacity: .9;
+
+    width: 100%;
+}
+.messages .messages-elem-right .messages-elem-text .messages-elem-text-date .messages-elem-text-name {
+    text-align: right;
+}
+
+.messages .messages-elem .messages-elem-text .messages-elem-text-other {
+    margin-top: 10px;
+}
